@@ -12,8 +12,78 @@ ALUMNO: Aranda Iván
 Sistema experto de ia para la identificación de aves de la provincia de tierra del fuego
 
 ## Descripción del proyecto
+Este proyecto se centra en el desarrollo de un Sistema Experto que reconozca e identifique aves autóctonas presentes en la provincia de Tierra del Fuego, creando una herramienta intuitiva que, a partir de ciertas características observables, pueda guiar a personas no expertas en la identificación de las diversas especies que habitan en nuestra provincia.
+
+Se consultó a un experto humano - Maximiliano Aguilar - Agente de conservación de áreas protegidas del municipio de Río Grande. El conocimiento extraído se representó mediante un árbol de decisión para facilitar la toma de decisiones secuencial y lógica.
 
 ## Guía de instalación y ejecución
 
-Requisitos previos
-Pasos de instalación(clonar repo,etc)
+### Requisitos previos
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas en tu sistema operativo:
+
+1. Python 3.8 o superior:
+   * Verifica tu versión: Abre una terminal y escribe python --version o python3 --version.
+   * Descarga: python.org/downloads/
+2. pip (Administrador de paquetes de Python):
+   * Generalmente viene incluido con Python.
+   * Verifica: pip --version o pip3 --version.
+3. Node.js (LTS recomendado):
+   * Incluye npm (Node Package Manager).
+   * Verifica tu versión: node -v y npm -v.
+   * Descarga: nodejs.org/es/download/
+
+
+### Pasos de instalación(clonar repo,etc)
+1.  Configuración y Ejecución del Backend (FastAPI)
+   
+    * Crear y Activar un Entorno Virtual (Recomendado):
+      
+    * Crear el entorno virtual:
+      
+         python -m venv venv
+      
+    * Activar el entorno virtual:
+      
+    En Windows (Command Prompt):
+    
+        .\venv\Scripts\activate
+    
+      (Verás (venv) al inicio de tu línea de comando si se activó correctamente).
+    
+    * Instalar las Dependencias de Python:
+      
+    Con el entorno virtual activado, instala las librerías necesarias para FastAPI.
+    
+        pip install -r requirements.txt
+    
+    * Ejecutar el Servidor FastAPI:
+      
+    Ahora, inicia el servidor de FastAPI.
+    
+        uvicorn main:app --reload
+    
+      Deja esta terminal abierta y el servidor ejecutándose.
+
+3. Configuración y Ejecución del Frontend (React)
+    * Navega al Directorio del Frontend:
+      
+    Abre tu segunda terminal y ve a la carpeta frontend de tu proyecto:
+   
+        cd sistema-experto-aves-tdf/frontend
+   
+    * Instalar las Dependencias de Node.js:
+      
+    Instala todas las librerías de React y otras dependencias del frontend
+   
+    * Ejecutar la Aplicación React:
+      
+    Inicia el servidor de desarrollo de React.
+   
+        npm start
+   
+      Esto abrirá automáticamente tu navegador web en http://localhost:3000. Si no se abre, navega manualmente a esa dirección.
+   
+      Deberías ver tu aplicación de sistema experto.
+   
+      Deja esta terminal abierta y el servidor ejecutándose.
+
