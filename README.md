@@ -8,7 +8,7 @@ DOCENTE: Lic. Mirabete Martín
 
 ALUMNO: Aranda Iván
 
-# Sistema experto de ia
+# Sistema experto de IA
 Sistema experto de ia para la identificación de aves de la provincia de tierra del fuego
 
 ## Descripción del proyecto
@@ -31,16 +31,20 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas en
    * Incluye npm (Node Package Manager).
    * Verifica tu versión: node -v y npm -v.
    * Descarga: nodejs.org/es/download/
+4. Editor de código
+   * Como Visual Studio Code (VSC)
 
+### Clonar el repositorio
+Crear una carpeta en la que se clonara y guaradará este repositorio
 
-### Pasos de instalación(clonar repo,etc)
+### Pasos de instalación
 1.  Configuración y Ejecución del Backend (FastAPI)
    
     * Crear y Activar un Entorno Virtual (Recomendado):
       
     * Crear el entorno virtual:
       
-         python -m venv venv
+        python -m venv venv
       
     * Activar el entorno virtual:
       
