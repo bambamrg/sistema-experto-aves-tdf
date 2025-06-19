@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e2e8f0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header h1 {
+  font-size: 1.8em;
+}
+
+/* Media Queries: Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 1.5em; /* Reducir el tamaño del título en pantallas medianas */
+  }
+
+  .expert-system-container {
+    padding: 15px; /* Más padding en pantallas más pequeñas */
+    margin: 20px auto; /* Reducir margen superior/inferior */
+  }
+
+  h2 {
+    font-size: 1.3em; /* Reducir el tamaño de las preguntas */
+  }
+
+  .option-button {
+    padding: 8px 15px; /* Más pequeño para botones */
+    font-size: 0.85em;
+  }
+
+  .result-card .bird-name {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header h1 {
+    font-size: 1.3em; /* Aún más pequeño en móviles */
+  }
+
+  .expert-system-container {
+    width: 95%; /* Ocupar casi todo el ancho */
+    padding: 10px; /* Padding mínimo */
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 1.1em; /* Ajustar el tamaño de la pregunta */
+  }
+
+  .options-container {
+    flex-direction: column; /* Las opciones se apilan verticalmente en móviles */
+    align-items: stretch; /* Se estiran para ocupar el ancho completo */
+  }
+
+  .option-button {
+    width: 100%; /* Cada botón ocupa todo el ancho */
+    max-width: none; /* Eliminar el max-width */
+    min-width: unset; /* Eliminar el min-width */
+    margin-bottom: 5px; /* Pequeño margen entre botones apilados */
+  }
+
+  .result-card .bird-name {
+    font-size: 1.1em;
+  }
+}

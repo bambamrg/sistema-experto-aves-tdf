@@ -91,3 +91,38 @@ Crear una carpeta en la que se clonara y guaradará este repositorio
    
       Deja esta terminal abierta y el servidor ejecutándose.
 
+# Estructura del proyecto
+
+mi_sistema_experto_aves/
+├── .gitignore              # Archivo para Git para ignorar archivos y carpetas no deseados
+├── README.md               # Documentación general del proyecto (cómo funciona, cómo ejecutarlo, etc.)
+├── .venv/              # Directorio para el entorno virtual de Python (ignorado por Git)
+├── main.py             # Archivo principal de la aplicación FastAPI y lógica del sistema experto
+├── arbol.json          # Archivo JSON con la base de conocimiento del árbol de decisión
+├── requirements.txt    # Lista de dependencias de Python (generada con `pip freeze > requirements.txt`)
+├── Documentos
+│
+└── Frontend/               # Contiene todo lo relacionado con la aplicación React
+|   ├── node_modules
+    ├── public/             # Archivos estáticos públicos (index.html, favicon.ico, imágenes estáticas)
+    │   └── index.html
+    │   └── favicon.ico
+    │   └── logo192.png
+    |   └── logo512.png
+    |   └── manifest.json
+    |   └── robots.txt
+    ├── src/                # Código fuente de la aplicación React
+    │   ├── ExpertSystem.js      # Lógica principal del componente
+    │   └── ExpertSystem.css     # Estilos específicos del componente
+    │   ├── App.js          # Componente raíz de la aplicación
+    │   ├── App.css         # Estilos globales de la aplicación
+    |   ├── App.test.js
+    │   ├── index.js        # Punto de entrada de la aplicación React
+    │   ├── index.css       # Estilos CSS globales para el body, etc.
+    |   ├── logo.svg
+    |   ├── reportWebVitals.js
+    |   └── setupTests.js
+    ├── .gitignore
+    ├── package.json        # Archivo de configuración de Node.js/npm (dependencias, scripts)
+    ├── package-lock.json   # Bloqueo de versiones exactas de dependencias (generado automáticamente)
+    └── README.md           # Documentación específica del frontend

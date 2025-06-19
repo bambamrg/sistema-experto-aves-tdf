@@ -1,0 +1,101 @@
+{
+    "__v": 1,
+    "description": "Guion JSON para la representación del conocimiento de aves autóctonas de Tierra del Fuego",
+    "domain": "Biodiversidad de Tierra del Fuego",
+    "subdomain": "Aves Autóctonas de Tierra del Fuego",
+    "representation_type": "Árbol de Decisión",
+    "nodes": [
+      {
+        "id": "root",
+        "question": "¿Tamaño?",
+        "options": [
+          {"value": "Pequeño", "next": "pequeno_habitat"},
+          {"value": "Mediano", "next": "mediano_habitat"},
+          {"value": "Grande", "next": "grande_habitat"}
+        ]
+      },
+      {
+        "id": "pequeno_habitat",
+        "question": "¿Hábitat Principal?",
+        "options": [
+          {"value": "Bosque", "next": "pequeno_bosque_color"},
+          {"value": "Costa", "next": "pequeno_costa_color"},
+          {"value": "Humedal", "next": "pequeno_humedal_color"}
+        ]
+      },
+      {
+        "id": "pequeno_costa_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Marron/Gris", "result": "Playerito Rabadilla Blanca (Calidris Fuscicollis)"}
+        ]
+      },
+      {
+        "id": "pequeno_bosque_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Blanco", "result": "Rayadito (Aphrastura spinicauda)"},
+          {"value": "Negro/Blanco", "result": "Picaflor Rubí (Sephanoides sephaniodes)"}
+        ]
+      },
+      {
+        "id": "pequeno_humedal_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Gris/Blanco", "result": "Pitotoy Chico (Tringa Flavipes)"}
+        ]
+      },
+      {
+        "id": "mediano_habitat",
+        "question": "¿Hábitat Principal?",
+        "options": [
+          {"value": "Bosque", "next": "mediano_bosque_color"},
+          {"value": "Costa", "next": "mediano_costa_color"},
+          {"value": "Estepa", "next": "mediano_estepa_color"}
+        ]
+      },
+      {
+        "id": "mediano_costa_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Negro/Blanco", "result": "Gaviota Cocinera (Larus Domnicanus)"}
+        ]
+      },
+      {
+        "id": "mediano_bosque_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Negro/Blanco/Rojo", "result": "Carpintero Gigante (Campephilus Magellanicus)"}
+        ]
+      },
+      {
+        "id": "mediano_estepa_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Marron/Gris", "result": "Águila Mora (Geranoaetus Melanoleucus)"}
+        ]
+      },
+      {
+        "id": "grande_habitat",
+        "question": "¿Hábitat Principal?",
+        "options": [
+          {"value": "Costa", "next": "grande_costa_color"},
+          {"value": "Estepa", "next": "grande_estepa_color"}
+        ]
+      },
+      {
+        "id": "grande_costa_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Negro", "result": "Albatros Ceja Negra (Thalassarche Melanophris)"}
+        ]
+      },
+      {
+        "id": "grande_estepa_color",
+        "question": "¿Coloración Predominante del Plumaje?",
+        "options": [
+          {"value": "Negro", "result": "Condor Andino (Vultur Gryphus)"}
+        ]
+      }
+    ]
+  }
