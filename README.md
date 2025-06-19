@@ -93,6 +93,8 @@ Crear una carpeta en la que se clonara y guaradará este repositorio
 
 # Estructura del proyecto
 
+```plaintext
+
 mi_sistema_experto_aves/
 ├── .gitignore              # Archivo para Git para ignorar archivos y carpetas no deseados
 ├── README.md               # Documentación general del proyecto (cómo funciona, cómo ejecutarlo, etc.)
