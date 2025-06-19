@@ -105,7 +105,7 @@ mi_sistema_experto_aves/
 ├── Documentos
 │
 └── Frontend/               # Contiene todo lo relacionado con la aplicación React
-|   ├── node_modules
+    ├── node_modules
     ├── public/             # Archivos estáticos públicos (index.html, favicon.ico, imágenes estáticas)
     │   └── index.html
     │   └── favicon.ico
